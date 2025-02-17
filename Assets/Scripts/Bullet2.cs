@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 //Controls the bullet that can hit player on Enemy 
-public class Bullet : MonoBehaviour
+public class Bullet2 : MonoBehaviour
 {
     //==================================================================================================================
     // Variables 

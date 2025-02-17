@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.Experimental.AI;
 
-public class PlayerShoot : MonoBehaviour
+public class PlayerShoot2 : MonoBehaviour
 {
-    public GameObject preFab;
+    public GameObject preFab2;
     public Transform bulletTrash;
     public Transform bulletSpawn;
 
@@ -34,11 +34,11 @@ public class PlayerShoot : MonoBehaviour
     }
     private void Shoot()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && _canShoot)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && _canShoot)
         {
-            GameObject bullet = Instantiate(preFab, bulletSpawn.position, Quaternion.identity);
+            GameObject bullet2 = Instantiate(preFab2, bulletSpawn.position, Quaternion.identity);
 
-            bullet.transform.SetParent(bulletTrash);
+            bullet2.transform.SetParent(bulletTrash);
 
             _canShoot = false;
         }
